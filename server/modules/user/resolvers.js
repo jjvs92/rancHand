@@ -18,7 +18,7 @@ const resolvers = {
         email: 'testEmail@ranchand.com',
         type: 'testOwner'
       }]
-    }, //User.find({}),
+    }
   },
 
 /**

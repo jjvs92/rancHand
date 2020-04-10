@@ -4,7 +4,7 @@ const { gql } = require('apollo-server-express')
 // #2 Construct a schema with gql and using the GraphQL schema language
 const typeDefs = gql`
   type User {
-    _id: ID!,
+    _id: String!,
     firstName: String!,
     lastName: String!,
     email: String!,
@@ -19,7 +19,8 @@ const typeDefs = gql`
   },
   type Query {
     ranches: [Ranch]!,
-    users: [User]!
+    users: [User]!,
+    getUserById(_id: ID!) : User
   },
   type Mutation {
     addRanch(owner: String!, name: String!, size: String!): Ranch,
