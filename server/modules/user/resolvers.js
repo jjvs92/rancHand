@@ -1,6 +1,6 @@
 // #1 Import the model created with mongoose
 // const User = require('./models/user');
-
+const { Company, User} = require('./models');
 // #2 Create resolver functions to handle GraphQL queries
 /**
  * Query resolver "posts" must return values in response to
@@ -9,7 +9,9 @@
 const resolvers = {
   Query: {
     // Query which returns posts list
-    users: () => {
+    users: async () => {
+      const users = await User.query()
+      console.info('Users: ', users);
       console.info("INVOKED BITCHES")
       return [{
         _id: 'testId',
