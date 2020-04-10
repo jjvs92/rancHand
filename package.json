@@ -1,0 +1,26 @@
+{
+  "name": "ranchand",
+  "version": "1.0.0",
+  "description": "Dipitty dooda",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon ./server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjvs92/rancHand.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjvs92/rancHand/issues"
+  },
+  "homepage": "https://github.com/jjvs92/rancHand#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.12.0",
+    "express": "^4.17.1",
+    "graphql": "^15.0.0",
+    "nodemon": "^2.0.3"
+  }
+}
