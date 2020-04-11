@@ -10,7 +10,6 @@ const typeDefs = gql`
     email: String!,
     type: String!
   },
-  
   type Ranch {
     _id: ID!,
     owner: User!,

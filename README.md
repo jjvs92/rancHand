@@ -22,3 +22,15 @@ https://github.com/knex/knex
 
 
 
+Apollo Client:
+ is a client-side library that leverages the power of a GraphQL API to handle data fetching and management for you, so that you can spend less time plumbing data and more on building your application.
+
+https://github.com/apollographql/apollo-client
+
+
+
+
+Apollo Server: 
+ is a library that helps you connect a GraphQL schema to an HTTP server in Node. js. It's possible to use Apollo Server with all popular HTTP servers like Express, Connect, Hapi, Koa, Restify, and Lamb
+ 
+https://github.com/apollographql/apollo-server#readme
