@@ -5,7 +5,6 @@ import { Query } from 'react-apollo';
 export const GET_USERS = gql`
   {
     users {
-      _id
       firstName
       lastName
     }
