@@ -3,23 +3,17 @@
 const { Company, User} = require('./models');
 // #2 Create resolver functions to handle GraphQL queries
 /**
- * Query resolver "posts" must return values in response to
+ * Query resolver "users" must return values in response to
  * the query "users" in GraphQL schema.
  */
 const resolvers = {
   Query: {
-    // Query which returns posts list
+    // Query which returns users list
     users: async () => {
       const users = await User.query()
-      console.info('Users: ', users);
+      console.info('Users: ', users[0]);
       console.info("INVOKED BITCHES")
-      return [{
-        _id: 'testId',
-        firstName: 'testFirstName',
-        lastName: 'testLastName',
-        email: 'testEmail@ranchand.com',
-        type: 'testOwner'
-      }]
+      return users
     }
   },
 
