@@ -1,0 +1,6 @@
+query CurrentUserForLayout {
+    users{
+        firstName,
+        lastName,
+    }
+}

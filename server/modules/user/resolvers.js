@@ -11,8 +11,6 @@ const resolvers = {
     // Query which returns users list
     users: async () => {
       const users = await User.query()
-      console.info('Users: ', users[0]);
-      console.info("INVOKED BITCHES")
       return users
     }
   },

@@ -1,7 +1,7 @@
 // Import Express and Apollo Server
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
-
+// const schema = require('./modules/user/schema.graphql');
 // Import GraphQL type definitions
 const typeDefs = require('./modules/user/graphqlSchema');
 

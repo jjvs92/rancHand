@@ -1,25 +1,12 @@
 import React from 'react';
-import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
-
-export const GET_USERS = gql`
-  {
-    users {
-      _id
-      firstName
-      lastName
-    }
-  }
-`;
+import getUsers from '../queries/getUsers.graphql';
 
 const withUsers = Component => props => {
   return (
-    <Query query={GET_USERS}>
+    <Query query={getUsers}>
       {({ loading, data }) => {
-        console.log("-- Provider --")
-        console.log(data)
-        console.log("Loading")
-        console.log(loading)
+        console.info('loading: ', loading);
         return (
           <Component usersLoading={loading} users={data && data.users} {...props} />
         );
