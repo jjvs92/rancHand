@@ -1,0 +1,19 @@
+body {
+  margin: 0px;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+a:hover {
+  background-color: darkgreen;
+  color: white;
+  border: 1px solid white;
+}
+
+.center {
+  text-align: center
+}

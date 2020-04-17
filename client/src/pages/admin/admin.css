@@ -1,0 +1,17 @@
+#admin_container {
+  display: grid;
+  grid-template-columns: 15em auto;
+  grid-template-rows: 100vh;
+  grid-template-areas: "s c";
+}
+
+#side_bar {
+  grid-area: s;
+  overflow: scroll;
+  background: lightgrey;
+}
+
+#content {
+  grid-area: c;
+  overflow: scroll;
+}
