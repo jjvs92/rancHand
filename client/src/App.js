@@ -9,6 +9,7 @@ import './all.css'
 
 class App extends Component {
   render() {
+    console.log("fdsafsafas")
     return (
       <BrowserRouter>
         <ApolloProvider client={apolloClient}>
